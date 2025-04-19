@@ -8,11 +8,13 @@
 
 Automatically configure **Dynamic DNS (DDNS)**, **reverse proxy (Nginx)**, **port forwarding**, and **Let's Encrypt SSL certificates** for services hosted behind a dynamic IP address.
 
-This script is designed for users who:
+The setup script is designed for users who:
 - Have a **dynamic public IP** (ISP changes your IP frequently)
 - Manage domains via **cPanel Dynamic DNS**
 - Want to access **home services remotely** (e.g., Jellyfin, Home Assistant, etc.)
 - Want **secure HTTPS access** with free SSL (Let's Encrypt)
+
+If you need to undo everything, just run the cleanup script https://github.com/theDavidCoen/ddnscpanel/edit/main/README.md#-cleanup--removal-safe-mode
 
 ---
 
@@ -94,6 +96,23 @@ https://home.example.com
 ```
 
 with automatic IP updates and HTTPS enabled!
+
+---
+
+## 🧹 Cleanup / Removal (Safe Mode)
+
+If you want to **safely remove** the setup:
+
+```bash
+cd ../cleanup
+chmod +x ddns_remove.sh
+sudo ./ddns_remove.sh
+```
+
+The script will:
+- Ask for confirmation before each removal step
+- Remove crontab jobs, scripts, Nginx configuration, SSL certificates
+- **Does NOT touch your firewall rules (UFW)**
 
 ---
 
