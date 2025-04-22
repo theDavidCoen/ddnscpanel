@@ -3,8 +3,9 @@
 [![License](https://img.shields.io/github/license/theDavidCoen/ddnscpanel)](https://github.com/theDavidCoen/ddnscpanel/blob/main/README.md#license)
 [![Stars](https://img.shields.io/github/stars/theDavidCoen/ddnscpanel?style=social)](https://github.com/theDavidCoen/ddnscpanel)
 [![Issues](https://img.shields.io/github/issues/theDavidCoen/ddnscpanel)](https://github.com/theDavidCoen/ddnscpanel/issues)
-
 ---
+***This is a work in progress. It may not work correctly.***
+
 
 Automatically configure **Dynamic DNS (DDNS)**, **reverse proxy (Nginx)**, **port forwarding**, and **Let's Encrypt SSL certificates** for services hosted behind a dynamic IP address.
 
